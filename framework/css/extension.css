@@ -1,0 +1,245 @@
+/*! Hydraflame v1.0 Main CSS Overwrite File */
+/*! This extends or overwrite the elements in toolkit.min.css */
+
+/* TOC
+	UF01 - Overall Page Elements
+	UF02 - Header Elements
+	UF03 - Footer Elements
+	UF04 - Message Elements
+*/
+
+@import "rhinoslider-1.05.css";
+
+/* Overall Page Elements - UF01
+   ========================================================================== */
+
+html,body { height: 100%; min-height: 100%; }
+
+body {
+	background-color: #F2F2F2;
+	min-height: 100%;
+	font-family: "proxima-nova";
+	font-size: 16px;
+	line-height: 20px;
+	color: #686B72;
+	min-height: 100%;
+}
+
+a {
+	color: #7f873f;
+	text-decoration: none;
+	
+	-webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+a:hover {
+	color: #4C5438;
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 32px;
+	line-height: 37px;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 24px;
+	line-height: 27px;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	margin: 6px 0;
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	height: 0px;
+
+	
+   }
+
+	.fade-full {
+		opacity: 1;
+		-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	}
+
+.parent {
+	height: 100%;
+    	min-height: 100%;
+    	margin:0 auto;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.main { padding: 50px 0; }
+
+.success { color: green; }
+.error { color: red; }
+
+.container { max-width: 960px; }
+
+
+.special-header {
+	font-family: "nimbus-sans-condensed";
+	font-size: 32px;
+	line-height: 37px;
+	color: #000;
+	margin-bottom: 10px;
+}
+/* Header Elements - UF02
+   ========================================================================== */
+
+#header {
+	background: url('http://www.hydraflame.com/modx/framework/images/be_site/big-ears-festival-2016-header.jpg') no-repeat;
+	background-size: 100%;
+/*	min-width: 1060px;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 35px;
+}
+
+#b-left { 
+	position: fixed;
+	top: -25px;
+	left: 7px;
+	z-index: 999; 
+}
+
+#b-right { 
+	position: fixed;
+	top: -25px;
+	left: 835px;
+	z-index: 999; 
+}
+
+.tickets {
+	margin-top: 15px;
+}
+.tickets-flex {
+	background-color: #F2F2F2; 
+	background: url('http://www.hydraflame.com/modx/framework/images/be_site/gradient-repeater.jpg'); 
+	height: 175px;
+}
+.tickets-mobile {
+	background: #f2f2f2;
+	padding-top: 15px;
+}
+
+hr { 
+	color: #D3D3D3;
+}
+.news-body { 
+	font-family: "proxima-nova";
+	font-size: 16px;
+	line-height: 20px;
+	color: #686B72;
+	
+	height: 45px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+#body-content {
+	margin-top: 20px;
+}
+
+#image-slider {
+	height: 175px;
+}
+
+#button-holder {
+	background: url('http://www.hydraflame.com/modx/framework/images/be_site/gradient-repeater.jpg') repeat-x; 
+	height: 78px;
+	padding-top: 30px;	
+	margin-left: 105px;
+	margin-right: 105px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	-webkit-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
+}
+
+#button-holder img { position: absolute; }
+#b-container { position: absolute; width: 100%; right: -170px;  }
+
+/* Footer Page Elements - UF03
+   ========================================================================== */
+
+#footer {
+	position: relative;
+	background: url('http://www.hydraflame.com/modx/framework/images/be_site/big-ears-splash-footer.jpg') repeat-y;
+	background-size: 100%;
+	bottom: 0;
+	padding-top: 25px;	
+	width: 100%;
+}
+
+#footer img {
+	margin-right: 15px;
+	height: 36px;
+	width: 36px;
+}
+
+/* Form Elements - UF04
+   ========================================================================== */
+
+input[type="button"], input[type="submit"] {
+	background: #7f873f;
+	border-style: 1px solid #fff;
+	color: #FFF;
+	font: 18px "nimbus-sans-condensed";
+	padding: 5px 15px;
+	
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	text-transform: uppercase;
+}
+
+input[type="button"], input[type="submit"]:hover {
+	background: #4c5438;
+	border-style: 1px solid #fff;
+	padding: 5px 15px;
+}
+
+input[type="text"] {
+	width: 75%;
+	background: #f2f2f2;
+	border: 1px solid #fff;
+	padding: 10px 15px;
+	color: #686B72;
+	font-family: "Proxima Nova Regular";
+}
